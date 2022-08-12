@@ -1,0 +1,66 @@
+.subscription {
+    background-image: url(../img/bgc-2.jpg);
+    padding: 100px 0 120px;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__list {
+        text-align: left;
+    }
+
+    &__item {
+        margin-bottom: 15px;
+    }
+
+    &__form {
+        // width: 448px;
+        // height: 113px;
+        padding: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--white);
+    }
+
+    &__box {
+        background-color: var(--white);
+        padding: 20px 22px;
+        display: flex;
+        align-items: center;
+
+        input {
+            height: 45px;
+            width: 200px;
+            padding-left: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            border: 1px solid var(--grey);
+
+        }
+
+        input::placeholder {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--grey);
+        }
+    }
+
+    &__btn {
+        padding: 14px 35px;
+        color: var(--white);
+        background-color: var(--accent);
+        border: 1px solid var(--white);
+        margin-left: 15px;
+    }
+}

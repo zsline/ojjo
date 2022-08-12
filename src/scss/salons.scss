@@ -1,0 +1,38 @@
+.salons {
+    background-image: url(../img/bgc-2.jpg);
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+
+    &__subtitle {
+        font-size: 21px;
+        line-height: 140%;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        margin-bottom: 45px;
+    }
+
+    &__text {
+        max-width: 730px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        font-size: 18px;
+    }
+
+    &__btn {
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid #333333;
+        color: var(--accent);
+        transition: all 0.3s ;
+    }
+    &__btn:hover{
+        background: rgba(255, 255, 255, 0.3);
+        color: #fff;
+    }
+}
