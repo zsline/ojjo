@@ -37,7 +37,7 @@
             bottom: -5px;
             width: 0px;
             border-bottom: 2px dashed var(--accent);
-            transition: all 0.5s;
+            transition: all 0.5s ease-in-out;
         }
         &-services{
             display: grid;

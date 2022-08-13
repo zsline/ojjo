@@ -275,10 +275,10 @@ li {
   left: 0;
   bottom: -5px;
   width: 0px;
-  height: 2px;
+  height: 1px;
   background-color: var(--white);
   opacity: 0.5;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav {
@@ -694,7 +694,7 @@ li {
   bottom: -5px;
   width: 0px;
   border-bottom: 2px dashed var(--accent);
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 .catalog__info-services {
   display: grid;

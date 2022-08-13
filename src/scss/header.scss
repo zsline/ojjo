@@ -62,10 +62,10 @@
             left: 0;
             bottom: -5px;
             width: 0px;
-            height: 2px;
+            height: 1px;
             background-color: var(--white);
             opacity: 0.5;
-            transition: all 0.5s;
+            transition: all 0.5s ease-in-out;
         }
     }
 }
