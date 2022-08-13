@@ -2,8 +2,9 @@
 <html lang="en">
 
 @@include('html/head.html',{
-    "title":"Каталог"
+"title":"Каталог"
 })
+
 <body class="catalog">
     @@include('html/header-catalog.html',{})
     <main>
@@ -32,13 +33,57 @@
                         @@include('html/product-card.html',{})
                     </div>
                 </div>
-                
+                <div class="catalog__info">
+                    <div class="catalog__info-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, lorem eu commodo porttitor
+                            erat.
+                            Amet mauris cursus bibendum in egestas. Nulla porttitor amet quam elit, mauris. Tortor
+                            egestas
+                            dignissim augue suspendisse rutrum pretium lobortis dolor. Commodo sagittis at amet faucibus
+                            faucibus id. Bibendum placerat convallis gravida eu quisque et augue. Sed dignissim amet ut
+                            vitae at ornare sed.
+                            Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu
+                            quisque et
+                            augue. Sed dignissim amet ut vitae at ornare sed.
+                        </p>
+                        <div class="catalog__info-link link-team">
+                            <a href="#">Читать полностью</a>
+                            <span class="catalog__info-hover"></span>
+                        </div>
+
+                    </div>
+                    <div class="catalog__info-services">
+                        <div class="catalog__info-item">
+                            <img src="@img/icon-1.svg" alt="services">
+                            <p>Бесплатная
+                                доставка</p>
+                        </div>
+                        <div class="catalog__info-item">
+                            <img src="@img/icon-2.svg" alt="services">
+                            <p>Индивидуальный
+                                дизайн</p>
+                        </div>
+                        <div class="catalog__info-item">
+                            <img src="@img/icon-3.svg" alt="services">
+                            <p>Бесплатная
+                                примерка</p>
+                        </div>
+                        <div class="catalog__info-item">
+                            <img src="@img/icon-4.svg" alt="services">
+                            <p>Личный<br>
+                                подход</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
+
         </div>
-        
+
         @@include('html/subscription.html',{})
     </main>
     @@include('html/footer.html',{})
 </body>
+
 </html>

@@ -21,6 +21,7 @@ a {
     text-decoration: none;
 }
 
+
 ul,
 li {
     padding: 0;
@@ -67,4 +68,12 @@ li {
 .catalog .header-catalog{
     background-color: var(--accent);
     position: relative;
+}
+
+.link-team {
+    opacity: 1;
+    transition: all 0.3s;
+}
+.link-team:hover{
+    opacity: 0.7;
 }

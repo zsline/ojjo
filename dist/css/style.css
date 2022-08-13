@@ -207,6 +207,15 @@ li {
   position: relative;
 }
 
+.link-team {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.link-team:hover {
+  opacity: 0.7;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -258,6 +267,19 @@ li {
 .header__search__user {
   margin-right: 0;
 }
+.header__login {
+  position: relative;
+}
+.header__login-hover {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0px;
+  height: 2px;
+  background-color: var(--white);
+  opacity: 0.5;
+  transition: all 0.5s;
+}
 
 .nav {
   justify-self: start;
@@ -281,6 +303,19 @@ li {
   font-size: 20px;
 }
 
+.menu {
+  position: relative;
+}
+.menu__hover {
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: var(--white);
+  bottom: -10px;
+  left: 0;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
 .menu__inner {
   display: flex;
   color: var(--white);
@@ -634,6 +669,41 @@ li {
   grid-gap: 20px;
   padding: 60px 0;
 }
+.catalog__info {
+  display: flex;
+  max-width: 920px;
+  margin: 150px auto;
+}
+.catalog__info-text {
+  max-width: 540px;
+}
+.catalog__info-text a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.catalog__info-link {
+  display: inline-block;
+  position: relative;
+}
+.catalog__info-hover {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0px;
+  border-bottom: 2px dashed var(--accent);
+  transition: all 0.5s;
+}
+.catalog__info-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px 60px;
+  max-width: 280px;
+  text-align: center;
+  margin-left: 100px;
+}
 
 .product-card {
   display: flex;
@@ -721,4 +791,8 @@ li {
 .contacts__social a {
   font-size: 20px;
   margin-right: 20px;
+}
+
+span {
+  display: inline;
 }

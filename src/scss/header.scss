@@ -55,6 +55,19 @@
             margin-right: 0;
         }
     }
+    &__login{
+        position: relative;
+        &-hover{
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0px;
+            height: 2px;
+            background-color: var(--white);
+            opacity: 0.5;
+            transition: all 0.5s;
+        }
+    }
 }
 
 .nav {
@@ -85,6 +98,17 @@
 
 
 .menu {
+    position: relative;
+    &__hover{
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        background-color: var(--white);
+        bottom: -10px;
+        left: 0;
+        opacity: 0.5;
+        transition: all 0.5s;
+    }
     &__inner {
         display: flex;
         color: var(--white);
