@@ -1,0 +1,122 @@
+.product {
+    &__content {
+        text-align: center;
+
+        &-title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        &-path {
+            font-size: 14px;
+            line-height: 150%;
+            display: flex;
+            justify-content: start;
+            color: var(--hard-grey);
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--grey);
+
+            span {
+                margin-left: 15px;
+                margin-right: 25px;
+            }
+        }
+
+        &-text {
+            font-size: 14px;
+            line-height: 150%;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        &-price {
+            text-align: left;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            line-height: 21px;
+            
+        }
+        &-btn{
+            background: var(--accent);
+            border: 1px solid var(--accent);
+            color: var(--white);
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                opacity: 0.8;
+            }
+           
+        }
+        &-btncard{
+            border: 1px solid var(--accent);
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+
+        &-item:last-child {
+            margin-left: 15px;
+        }
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            margin: 60px 0 50px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+
+            a {
+                text-decoration-line: underline;
+                margin: 0 15px;
+            }
+        }
+
+        &-inner {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-info {
+            border: 1px solid var(--grey);
+            padding: 10px;
+        }
+
+        &-infobox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px 30px;
+            border: 1px solid var(--grey);
+        }
+    }
+
+    &__picture {
+        &-title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 140%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__more {
+        text-align: center;
+    }
+}

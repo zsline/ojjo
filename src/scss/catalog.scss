@@ -1,5 +1,5 @@
 .catalog {
-    
+
     &__products {
         &-inner {
             display: grid;
@@ -39,7 +39,8 @@
             border-bottom: 2px dashed var(--accent);
             transition: all 0.5s ease-in-out;
         }
-        &-services{
+
+        &-services {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 30px 60px;
@@ -48,4 +49,172 @@
             margin-left: 100px;
         }
     }
+
+    &__list {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(6, 1fr);
+        margin-top: 100px;
+    }
+
+    &__item:last-child .catalog__item-modal::after,
+    &__item:last-child .catalog__item-modal::before {
+        left: 180px;
+    }
+
+    &__item:last-child .catalog__item-modal {
+        left: -100px;
+    }
+
+
+    &__item {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--grey);
+        padding-bottom: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        cursor: pointer;
+
+        &:hover {
+            .catalog__item-modal {
+                
+                transform:scaleY(100%);
+            }
+        }
+        &:hover {
+            .catalog__item-btn {
+                
+                transform:rotate(180deg);
+            }
+        }
+
+        &-btn {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        &-modal {
+            transform-origin: bottom;
+            transform:scaleY(0%);
+            position: absolute;
+            min-width: 100px;
+            top: 40px;
+            left: 0;
+            background: var(--bgc);
+            border: 1px solid var(--grey);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            white-space: nowrap;
+            cursor: default;
+            transition: all 0.3s ease-in-out;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: -20px;
+                left: 30px;
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 20px solid var(--bgc);
+
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -21px;
+                left: 30px;
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 20px solid var(--grey);
+
+            }
+
+
+        }
+
+        &-send {
+            padding: 10px 25px;
+        }
+
+        ._hidden {
+            display: block;
+        }
+
+        &-inner {
+            border-bottom: 1px solid var(--grey);
+            padding: 30px 30px 30px 20px;
+        }
+
+        &-send {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-clean,
+        &-show {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        &-clean {
+            border-bottom: 1px dashed var(--accent);
+        }
+
+        &-show {
+            background-color: var(--accent);
+            color: var(--white);
+            margin-left: 36px;
+            padding: 8px 12px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &-show:hover {
+            background-color: rgba($color: #333333, $alpha: 0.5);
+            color: var(--accent);
+
+
+        }
+
+        &-input {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+
+            input {
+                border: 1px solid var(--grey);
+                background: none;
+                max-width: 110px;
+                height: 26px;
+            }
+
+        }
+    }
+
+    form:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+
 }
