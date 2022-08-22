@@ -1,20 +1,9 @@
 
 import * as flsFunctions from "./modules/functions.js";
-import Swiper, { Navigation, Pagination } from 'swiper';
 
 flsFunctions.isWebp();
 
-// const swiper = new Swiper();
 
-
-  var swiper2 = new Swiper(".product__content-slider", {
-    thumbs: {
-        swiper: {
-            el: '.product__content-trumber',
-            slidesPerViev: 3,
-        }
-    },
-  });
 
 
 
