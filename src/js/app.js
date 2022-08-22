@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         more = document.querySelector('.catalog__info-hover'),
         readMore = document.querySelectorAll('.catalog__info-link');
 
-        readMore.forEach(el => {
+    readMore.forEach(el => {
         el.addEventListener('mouseenter', (e) => {
             more.style.width = `${e.currentTarget.offsetWidth}px`;
         });
@@ -50,4 +50,30 @@ document.addEventListener('DOMContentLoaded', () => {
             more.style.width = `0px`;
         });
     });
+
+// Слайдер товара //
+
+    const
+        sliderProducts = document.querySelectorAll('.product__slider-slider--slide'),
+        trumbsProducts = document.querySelectorAll('.product__slider-trumber--slide');
+    let index = 0;
+    const activeSlide = n => {
+        for (let slide of sliderProducts) {
+            slide.classList.remove('active');
+        }
+        for (let slide of trumbsProducts) {
+            slide.classList.remove('active');
+        }
+        sliderProducts[n].classList.add('active');
+        trumbsProducts[n].classList.add('active');
+    }
+    trumbsProducts.forEach((item, indexTrumb) => {
+        item.addEventListener('click', () => {
+            index = indexTrumb;
+            activeSlide(index);
+        });
+    });
+
+
+    
 });
