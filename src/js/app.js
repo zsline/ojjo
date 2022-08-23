@@ -51,29 +51,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-// Слайдер товара //
+    // Слайдер товара с добавлением класса//
+
+    // const
+    //     sliderProducts = document.querySelectorAll('.product__slider-slider--slide'),
+    //     trumbsProducts = document.querySelectorAll('.product__slider-trumber--slide');
+    // let index = 0;
+    // const activeSlide = n => {
+    //     for (let slide of sliderProducts) {
+    //         slide.classList.remove('active');
+    //     }
+    //     for (let slide of trumbsProducts) {
+    //         slide.classList.remove('active');
+    //     }
+    //     sliderProducts[n].classList.add('active');
+    //     trumbsProducts[n].classList.add('active');
+    // }
+    // trumbsProducts.forEach((item, indexTrumb) => {
+    //     item.addEventListener('click', () => {
+    //         index = indexTrumb;
+    //         activeSlide(index);
+    //     });
+    // });
+
+
+    // Слайдер товара сизменением  src//
 
     const
-        sliderProducts = document.querySelectorAll('.product__slider-slider--slide'),
+        sliderProducts = document.querySelector('.product__slider-slide img'),
+        sliderProductsWebp = document.querySelector('.product__slider-slide source'),
         trumbsProducts = document.querySelectorAll('.product__slider-trumber--slide');
     let index = 0;
+    let img = document.querySelectorAll('.product__slider-trumber--img');
+    let webp = document.querySelectorAll('.product__slider-trumber--slide source');
+
+
     const activeSlide = n => {
-        for (let slide of sliderProducts) {
-            slide.classList.remove('active');
-        }
         for (let slide of trumbsProducts) {
             slide.classList.remove('active');
         }
-        sliderProducts[n].classList.add('active');
         trumbsProducts[n].classList.add('active');
+        let pathImg = img[n].getAttribute('src');
+        let pathWebp = webp[n].getAttribute('srcset');
+        sliderProducts.setAttribute('src', `${pathImg}`);
+        sliderProductsWebp.setAttribute('srcset', `${pathWebp}`);
     }
+
     trumbsProducts.forEach((item, indexTrumb) => {
         item.addEventListener('click', () => {
             index = indexTrumb;
             activeSlide(index);
         });
     });
-
-
-    
 });
