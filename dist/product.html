@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220823144850">
     <title>OJJO Продукт</title>
 </head>
 
 <body class="product">
     <header class="header header-catalog">
-    <div class="container">
-        <div class="header__inner">
-            <div class="header__item">
-                <nav class="header__nav menu">
-                    <span class="menu__hover"></span>
-                    <ul class="menu__inner">
-                        <li class="menu__item nav"><a href="#" class="menu__link">
-                                Контрагентам
-                            </a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">
-                                Дизайнерам
-                            </a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">
-                                Вакансии
-                            </a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__item logo">
-                <a href="index.html">
-                    <img src="./img/logo.svg" alt="" class="header__logo logo">
-                </a>
-            </div>
-            <div class="header__item users">
-                <div class="header__search">
-                    <button class="icon-search"></button>
-                    <input type="text" placeholder="Поиск">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__item">
+                    <nav class="header__nav menu">
+                        <span class="menu__hover"></span>
+                        <ul class="menu__inner">
+                            <li class="menu__item nav"><a href="#" class="menu__link">
+                                    Контрагентам
+                                </a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">
+                                    Дизайнерам
+                                </a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">
+                                    Вакансии
+                                </a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="header__login">
-                    <span class="header__login-hover"></span>
-                    <span class="hover">
-                        <a href="#">Вход</a>
-                    </span>/
-                    <span class="hover">
-                        <a href="#">Регистрация</a>
-                    </span>
+                <div class="header__item logo">
+                    <a href="index.html">
+                        <img src="./img/logo.svg" alt="" class="header__logo logo">
+                    </a>
                 </div>
-                <div class="header__user user">
-                    <a href="#" class="user__avatar icon-user"></a>
-                    <a href="#" class="user__heart icon-heart"></a>
+                <div class="header__item users">
+                    <div class="header__search">
+                        <button class="icon-search"></button>
+                        <input type="text" placeholder="Поиск">
+                    </div>
+                    <div class="header__login">
+                        <span class="header__login-hover"></span>
+                        <span class="hover">
+                            <a href="#">Вход</a>
+                        </span>/
+                        <span class="hover">
+                            <a href="#">Регистрация</a>
+                        </span>
+                    </div>
+                    <div class="header__user user">
+                        <a href="#" class="user__avatar icon-user"></a>
+                        <a href="#" class="user__heart icon-heart"></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-</header>
+    </header>
     <main>
         <div class="container">
             <div class="product__content">
@@ -82,25 +83,34 @@
                 <div class="product__content-inner">
                     <div class="product__slider">
                         <div class="product__slider-slider">
-                            <div class="product__slider-slider--slide active">
-                                <img src="img/product-1.jpg" data-name="product-1" alt="product-1">
-                            </div>
-                            <div class="product__slider-slider--slide">
-                                <img src="img/product-2.jpg" data-name="product-2" alt="product-2">
-                            </div>
-                            <div class="product__slider-slider--slide">
-                                <img src="img/product-3.jpg" data-name="product-3" alt="product-3">
+                            <div class="product__slider-slide active">
+                                <picture>
+                                    <source srcset="img/product-1.webp" type="image/webp"><img src="img/product-1.jpg"
+                                        alt="product">
+                                </picture>
                             </div>
                         </div>
                         <div class="product__slider-trumber">
                             <div class="product__slider-trumber--slide active">
-                                <img src="img/product-1.jpg" data-name="product-1" alt="product-1">
+                                <picture>
+                                    <source srcset="img/product-1.webp" type="image/webp"><img
+                                        class="product__slider-trumber--img" src="img/product-1.jpg"
+                                        data-name="product-1" alt="product-1">
+                                </picture>
                             </div>
                             <div class="product__slider-trumber--slide">
-                                <img src="img/product-2.jpg" data-name="product-2" alt="product-2">
+                                <picture>
+                                    <source srcset="img/product-2.webp" type="image/webp"><img
+                                        class="product__slider-trumber--img" src="img/product-2.jpg"
+                                        data-name="product-2" alt="product-2">
+                                </picture>
                             </div>
                             <div class="product__slider-trumber--slide">
-                                <img src="img/product-3.jpg" data-name="product-3" alt="product-3">
+                                <picture>
+                                    <source srcset="img/product-3.webp" type="image/webp"><img
+                                        class="product__slider-trumber--img" src="img/product-3.jpg"
+                                        data-name="product-3" alt="product-3">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -193,197 +203,214 @@
                 <div class="catalog__products-inner">
                     <div class="catalog__products-item">
                         <div class="product-card">
-   <a class="product-card__link" href="product.html">
-    <div class="product-card__img">
-        <img src="img/product-img.jpg" alt="">
-    </div>
-    <div class="product-card__name">
-        Подвеска
-    </div>
-    <div class="product-card__brand">
-        Dolce & Gabanna
-    </div>
-    <div class="product-card__price">175 000 грн</div>
-</a> 
-</div>
+                            <a class="product-card__link" href="product.html">
+                                <div class="product-card__img">
+                                    <picture>
+                                        <source srcset="img/product-img.webp" type="image/webp"><img
+                                            src="img/product-img.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="product-card__name">
+                                    Подвеска
+                                </div>
+                                <div class="product-card__brand">
+                                    Dolce & Gabanna
+                                </div>
+                                <div class="product-card__price">175 000 грн</div>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="catalog__products-item">
                         <div class="product-card">
-   <a class="product-card__link" href="product.html">
-    <div class="product-card__img">
-        <img src="img/product-img.jpg" alt="">
-    </div>
-    <div class="product-card__name">
-        Подвеска
-    </div>
-    <div class="product-card__brand">
-        Dolce & Gabanna
-    </div>
-    <div class="product-card__price">175 000 грн</div>
-</a> 
-</div>
+                            <a class="product-card__link" href="product.html">
+                                <div class="product-card__img">
+                                    <picture>
+                                        <source srcset="img/product-img.webp" type="image/webp"><img
+                                            src="img/product-img.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="product-card__name">
+                                    Подвеска
+                                </div>
+                                <div class="product-card__brand">
+                                    Dolce & Gabanna
+                                </div>
+                                <div class="product-card__price">175 000 грн</div>
+                            </a>
+                        </div>
 
                     </div>
                     <div class="catalog__products-item">
                         <div class="product-card">
-   <a class="product-card__link" href="product.html">
-    <div class="product-card__img">
-        <img src="img/product-img.jpg" alt="">
-    </div>
-    <div class="product-card__name">
-        Подвеска
-    </div>
-    <div class="product-card__brand">
-        Dolce & Gabanna
-    </div>
-    <div class="product-card__price">175 000 грн</div>
-</a> 
-</div>
+                            <a class="product-card__link" href="product.html">
+                                <div class="product-card__img">
+                                    <picture>
+                                        <source srcset="img/product-img.webp" type="image/webp"><img
+                                            src="img/product-img.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="product-card__name">
+                                    Подвеска
+                                </div>
+                                <div class="product-card__brand">
+                                    Dolce & Gabanna
+                                </div>
+                                <div class="product-card__price">175 000 грн</div>
+                            </a>
+                        </div>
 
                     </div>
                 </div>
             </div>
         </div>
         <div class="subscription">
-    <div class="container">
-        <div class="subscription__subtitle">
-            Полезные советы и персональный предложения
-        </div>
-        <h2 class="subscription__title title">Эксклюзивная рассылка</h2>
-        <div class="subscription__inner">
-            <ul class="subscription__list">
-                <li class="subscription__item icon-marker">
-                    Личный менеджер
-                </li>
-                <li class="subscription__item icon-marker">
-                    Доставка и оформление
-                </li>
-                <li class="subscription__item icon-marker">
-                    Индивидуальный дизайн
-                </li>
-            </ul>
-            <form class="subscription__form" action="post">
-                <div class="subscription__box">
-                    <input type="mail" placeholder="Ваш e-mail">
-                    <button class="subscription__btn btn">отправить</button>
+            <div class="container">
+                <div class="subscription__subtitle">
+                    Полезные советы и персональный предложения
                 </div>
-            </form>
+                <h2 class="subscription__title title">Эксклюзивная рассылка</h2>
+                <div class="subscription__inner">
+                    <ul class="subscription__list">
+                        <li class="subscription__item icon-marker">
+                            Личный менеджер
+                        </li>
+                        <li class="subscription__item icon-marker">
+                            Доставка и оформление
+                        </li>
+                        <li class="subscription__item icon-marker">
+                            Индивидуальный дизайн
+                        </li>
+                    </ul>
+                    <form class="subscription__form" action="post">
+                        <div class="subscription__box">
+                            <input type="mail" placeholder="Ваш e-mail">
+                            <button class="subscription__btn btn">отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
     </main>
     <footer class="footer">
-    <div class="container">
-        <div class="footer__contacts contacts">
-            <div class="contacts__links">
-                <div class="contacts__title">
-                    Полезные ссылки
-                </div>
-                <ul class="contacts__links-list">
-                    <li class="contacts__links-item">
-                        <a href="#" class="contacts__links-link link-team link-team">
-                            Доставка
-                        </a>
-                    </li>
-                    <li class="contacts__links-item">
-                        <a href="#" class="contacts__links-link link-team link-team">
-                            Оплата
-                        </a>
-                    </li>
-                    <li class="footcontacts__links-">
-                        <a href="#" class="contacts__links-link link-team link-team">
-                            Акции
-                        </a>
-                    </li>
-                    <li class="contacts__links-item">
-                        <a href="#" class="contacts__links-link link-team link-team">
-                            Политика конфиденциальности
-                        </a>
-                    </li>
+        <div class="container">
+            <div class="footer__contacts contacts">
+                <div class="contacts__links">
+                    <div class="contacts__title">
+                        Полезные ссылки
+                    </div>
+                    <ul class="contacts__links-list">
+                        <li class="contacts__links-item">
+                            <a href="#" class="contacts__links-link link-team link-team">
+                                Доставка
+                            </a>
+                        </li>
+                        <li class="contacts__links-item">
+                            <a href="#" class="contacts__links-link link-team link-team">
+                                Оплата
+                            </a>
+                        </li>
+                        <li class="footcontacts__links-">
+                            <a href="#" class="contacts__links-link link-team link-team">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="contacts__links-item">
+                            <a href="#" class="contacts__links-link link-team link-team">
+                                Политика конфиденциальности
+                            </a>
+                        </li>
 
-                </ul>
-            </div>
-            <div class="contacts__pay">
-                <div class="contacts__title">
-                    Оплата
+                    </ul>
                 </div>
-                <p class="contacts__pay-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
-                </p>
-                <a class="contacts__pay-link link-team" href="#">
-                    <img class="contacts__pay-img" src="img/visa.png" alt="visa"></a>
-                <a class="contacts__pay-link link-team" href="#">
-                    <img class="contacts__pay-img" src="img/mastercard.png" alt="mastercard">
+                <div class="contacts__pay">
+                    <div class="contacts__title">
+                        Оплата
+                    </div>
+                    <p class="contacts__pay-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+                    </p>
+                    <a class="contacts__pay-link link-team" href="#">
+                        <picture>
+                            <source srcset="img/visa.webp" type="image/webp"><img class="contacts__pay-img"
+                                src="img/visa.png" alt="visa">
+                        </picture>
+                    </a>
+                    <a class="contacts__pay-link link-team" href="#">
+                        <picture>
+                            <source srcset="img/mastercard.webp" type="image/webp"><img class="contacts__pay-img"
+                                src="img/mastercard.png" alt="mastercard">
+                        </picture>
+                    </a>
+                </div>
+                <div class="contacts__contact">
+                    <div class="contacts__title">
+                        Контакты
+                    </div>
+                    <ul class="contacts__contact-list">
+                        <li class="contacts__contact-item">
+                            <a href="tel:80952345655" class="contacts__contact-link icon-phone link-team">
+                                8 (095) 234-56-55
+                            </a>
+                        </li>
+                        <li class="contacts__contact-item">
+                            <a href="tel:80952345655" class="contacts__contact-link icon-phone link-team">
+                                8 (095) 234-56-55
+                            </a>
+                        </li>
+                        <li class="contacts__contact-item">
+                            <a href="mailto:ojjo@ojjo.com" class="contacts__contact-link icon-phone link-team">
+                                ojjo@ojjo.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts__social">
+                    <div class="contacts__title">
+                        Социальные сети
+                    </div>
+                    <p class="contacts__social-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ullamcorper
+                        justo, nec, pellentesque.</p>
+
+                    <ul class="contacts__social-list">
+                        <li class="contacts__social-item">
+                            <a href="#" class="contacts__social-link icon-toutube link-team"></a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a href="#" class="contacts__social-link icon-vk link-team"></a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a href="#" class="contacts__social-link icon-fb link-team"></a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a href="#" class="contacts__social-link icon-telegram link-team"></a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a href="#" class="contacts__social-link icon-e link-team"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <div class="footer__copy-copy">
+                    (c) 2020 OJJO jewelry
+                </div>
+                <a class="footer__copy-treaty link-team" href="#">
+                    Договор публичной офферты
                 </a>
-            </div>
-            <div class="contacts__contact">
-                <div class="contacts__title">
-                    Контакты
+                <a class="footer__copy-counterparty link-team" href="#">
+                    Контрагентам
+                </a>
+                <div class="footer__copy-copy">
+                    Сделано DerekaWeb
                 </div>
-                <ul class="contacts__contact-list">
-                    <li class="contacts__contact-item">
-                        <a href="tel:80952345655" class="contacts__contact-link icon-phone link-team">
-                            8 (095) 234-56-55
-                        </a>
-                    </li>
-                    <li class="contacts__contact-item">
-                        <a href="tel:80952345655" class="contacts__contact-link icon-phone link-team">
-                            8 (095) 234-56-55
-                        </a>
-                    </li>
-                    <li class="contacts__contact-item">
-                        <a href="mailto:ojjo@ojjo.com" class="contacts__contact-link icon-phone link-team">
-                            ojjo@ojjo.com
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contacts__social">
-                <div class="contacts__title">
-                    Социальные сети
-                </div>
-                <p class="contacts__social-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper
-                    justo, nec, pellentesque.</p>
 
-                <ul class="contacts__social-list">
-                    <li class="contacts__social-item">
-                        <a href="#" class="contacts__social-link icon-toutube link-team"></a>
-                    </li>
-                    <li class="contacts__social-item">
-                        <a href="#" class="contacts__social-link icon-vk link-team"></a>
-                    </li>
-                    <li class="contacts__social-item">
-                        <a href="#" class="contacts__social-link icon-fb link-team"></a>
-                    </li>
-                    <li class="contacts__social-item">
-                        <a href="#" class="contacts__social-link icon-telegram link-team"></a>
-                    </li>
-                    <li class="contacts__social-item">
-                        <a href="#" class="contacts__social-link icon-e link-team"></a>
-                    </li>
-                </ul>
             </div>
         </div>
-        <div class="footer__copy">
-<div class="footer__copy-copy">
-    (c) 2020 OJJO jewelry
-</div>
-<a class="footer__copy-treaty link-team" href="#">
-    Договор публичной офферты
-</a>
-<a class="footer__copy-counterparty link-team" href="#">
-    Контрагентам
-</a>
-<div class="footer__copy-copy">
-    Сделано DerekaWeb
-</div>
 
-        </div>
-    </div>
-
-</footer>
-<script src="js/app.min.js"></script>
+    </footer>
+    <script src="js/app.min.js"></script>
     </label>
 </body>
 
